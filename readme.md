@@ -6,6 +6,6 @@ This is a test for checking the level of sociability in Ruby.
 
 Чтобы запустить программу в UNIX нужно вызвать консоль и набрать:
 
-$ ruby test.rb
+`$ ruby test.rb`
 
-Чтобы запустить программу из Windows нужно дважды кликнуть на файл с программой test.rb.
+Чтобы запустить программу из Windows нужно дважды кликнуть на файл с программой `test.rb`.
