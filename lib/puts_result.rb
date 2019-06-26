@@ -1,7 +1,7 @@
 # encoding: utf-8
 # Задача 12-4 — Объектно-ориентированный тест
 # Задача 14-1 — Тест с данными в файлах
-# Задача 23-5 — Тест на Тест на уровень общительности в github
+# Задача 23-5 — Тест на уровень общительности в github
 # http://psylist.net/praktikum/00003.htm
 
 class PutsResult
@@ -17,23 +17,19 @@ class PutsResult
 
   def to_print(score)
     if score <= 3
-      6
+      @resume[6]
     elsif score <= 8
-      5
+      @resume[5]
     elsif score <= 13
-      4
+      @resume[4]
     elsif score <= 18
-      3
+      @resume[3]
     elsif score <= 24
-      2
+      @resume[2]
     elsif score <= 29
-      1
+      @resume[1]
     else
-      0
+      @resume[0]
     end
-  end
-
-  def resume
-    @resume
   end
 end
