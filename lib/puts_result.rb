@@ -2,6 +2,7 @@
 # Задача 12-4 — Объектно-ориентированный тест
 # Задача 14-1 — Тест с данными в файлах
 # Задача 23-5 — Тест на уровень общительности в github
+# Задача 26-2 — Рефакторинг теста
 # http://psylist.net/praktikum/00003.htm
 
 class PutsResult
@@ -10,9 +11,7 @@ class PutsResult
       puts "Файл #{resume_path} не найден"
     end
 
-    f = File.new(resume_path,"r:UTF-8")
-    @resume = f.readlines
-    f.close
+    @resume = File.readlines(resume_path, encoding: "UTF-8")
   end
 
   def to_print(score)
